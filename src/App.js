@@ -17,6 +17,7 @@ import {
   Slide,
   Text
 } from 'spectacle';
+import FirstSlide from './components/firstSlide';
 import './App.css';
 
 class App extends Component {
@@ -25,7 +26,7 @@ class App extends Component {
       <div className="App">
         <Deck>
           <Slide>
-            <Text>Hello</Text>
+            <FirstSlide/>
           </Slide>
           <Slide>
             <Text>Hola</Text>
