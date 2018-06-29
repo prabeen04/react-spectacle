@@ -13,6 +13,7 @@ import {
   Layout,
   ListItem,
   List,
+  Notes,
   Quote,
   Slide,
   Text
@@ -34,9 +35,9 @@ class App extends Component {
               const angle = forward ? -180 : 180;
               return {
                 transform: `
-          translate3d(0%, ${transitioning ? 100 : 0}%, 0)
-          rotate(${transitioning ? angle : 0}deg)
-        `,
+                  translate3d(0%, ${transitioning ? 100 : 0}%, 0)
+                  rotate(${transitioning ? angle : 0}deg)
+                `,
                 backgroundColor: transitioning ? '#26afff' : 'tomato'
               };
             }
@@ -44,7 +45,13 @@ class App extends Component {
             <Text>Hola</Text>
           </Slide>
           <Slide>
-            <Text>Hiii</Text>
+            <Notes>
+              <h4>Slide notes</h4>
+              <ol>
+                <li>First note</li>
+                <li>Second note</li>
+              </ol>
+            </Notes>
           </Slide>
         </Deck>
       </div>
