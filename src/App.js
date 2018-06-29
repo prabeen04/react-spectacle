@@ -27,6 +27,12 @@ class App extends Component {
           <Slide>
             <Text>Hello</Text>
           </Slide>
+          <Slide>
+            <Text>Hola</Text>
+          </Slide>
+          <Slide>
+            <Text>Hiii</Text>
+          </Slide>
         </Deck>
       </div>
     );
