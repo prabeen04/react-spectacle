@@ -1,11 +1,33 @@
 import React, { Component } from 'react';
+import {
+  Appear,
+  BlockQuote,
+  Cite,
+  CodePane,
+  Code,
+  Deck,
+  Fill,
+  Fit,
+  Heading,
+  Image,
+  Layout,
+  ListItem,
+  List,
+  Quote,
+  Slide,
+  Text
+} from 'spectacle';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <h2>React Spectacle</h2>
+        <Deck>
+          <Slide>
+            <Text>Hello</Text>
+          </Slide>
+        </Deck>
       </div>
     );
   }
