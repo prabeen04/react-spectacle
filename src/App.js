@@ -53,13 +53,6 @@ class App extends Component {
               <ListItem>Repeat</ListItem>
             </List>
           </Slide>
-          <Notes>
-            <h4>Slide notes</h4>
-            <ol>
-              <li>First note</li>
-              <li>Second note</li>
-            </ol>
-          </Notes>
         </Deck>
       </div>
     );
