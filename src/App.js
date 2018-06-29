@@ -42,17 +42,24 @@ class App extends Component {
               };
             }
           ]}>
-            <Text>Hola</Text>
+          <Text>Slided Animation</Text>
           </Slide>
           <Slide>
-            <Notes>
-              <h4>Slide notes</h4>
-              <ol>
-                <li>First note</li>
-                <li>Second note</li>
-              </ol>
-            </Notes>
+            <Text>Hola</Text>
+            <List>
+              <ListItem>Watch</ListItem>
+              <ListItem>Observe</ListItem>
+              <ListItem>Practice</ListItem>
+              <ListItem>Repeat</ListItem>
+            </List>
           </Slide>
+          <Notes>
+            <h4>Slide notes</h4>
+            <ol>
+              <li>First note</li>
+              <li>Second note</li>
+            </ol>
+          </Notes>
         </Deck>
       </div>
     );
