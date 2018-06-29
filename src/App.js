@@ -26,9 +26,21 @@ class App extends Component {
       <div className="App">
         <Deck>
           <Slide>
-            <FirstSlide/>
+            <FirstSlide />
           </Slide>
-          <Slide>
+          <Slide transition={[
+            'fade',
+            (transitioning, forward) => {
+              const angle = forward ? -180 : 180;
+              return {
+                transform: `
+          translate3d(0%, ${transitioning ? 100 : 0}%, 0)
+          rotate(${transitioning ? angle : 0}deg)
+        `,
+                backgroundColor: transitioning ? '#26afff' : 'tomato'
+              };
+            }
+          ]}>
             <Text>Hola</Text>
           </Slide>
           <Slide>
